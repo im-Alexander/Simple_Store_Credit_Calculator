@@ -14,3 +14,4 @@ C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Debug\
 C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Debug\net10.0-windows\SimpleSCCalculator.pdb
 C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Debug\net10.0-windows\SimpleSCCalculator.genruntimeconfig.cache
 C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Debug\net10.0-windows\ref\SimpleSCCalculator.dll
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Debug\net10.0-windows\SimpleSCCalculator.sourcelink.json
