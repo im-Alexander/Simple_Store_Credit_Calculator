@@ -50,6 +50,9 @@
             storeCreditReceivedLbl = new Label();
             storeCreditReceivedTbx = new RichTextBox();
             tableLayoutPanel1 = new TableLayoutPanel();
+            addToListBtn = new Button();
+            clearListBtn = new Button();
+            prizingLbx = new ListBox();
             MainTlp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)totalPointsNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)everybodyGetsNum).BeginInit();
@@ -322,12 +325,45 @@
             tableLayoutPanel1.Size = new Size(288, 125);
             tableLayoutPanel1.TabIndex = 3;
             // 
+            // addToListBtn
+            // 
+            addToListBtn.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            addToListBtn.Location = new Point(356, 143);
+            addToListBtn.Name = "addToListBtn";
+            addToListBtn.Size = new Size(94, 37);
+            addToListBtn.TabIndex = 4;
+            addToListBtn.Text = "Add to list";
+            addToListBtn.UseVisualStyleBackColor = true;
+            addToListBtn.Click += addToListBtn_Click;
+            // 
+            // clearListBtn
+            // 
+            clearListBtn.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            clearListBtn.Location = new Point(550, 143);
+            clearListBtn.Name = "clearListBtn";
+            clearListBtn.Size = new Size(94, 37);
+            clearListBtn.TabIndex = 5;
+            clearListBtn.Text = "Clear list";
+            clearListBtn.UseVisualStyleBackColor = true;
+            clearListBtn.Click += clearListBtn_Click;
+            // 
+            // prizingLbx
+            // 
+            prizingLbx.FormattingEnabled = true;
+            prizingLbx.Location = new Point(356, 186);
+            prizingLbx.Name = "prizingLbx";
+            prizingLbx.Size = new Size(290, 172);
+            prizingLbx.TabIndex = 6;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(658, 362);
+            Controls.Add(prizingLbx);
+            Controls.Add(clearListBtn);
+            Controls.Add(addToListBtn);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(MainTlp);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -373,5 +409,8 @@
         private RichTextBox storeCreditReceivedTbx;
         private Label storeCreditReceivedLbl;
         private TableLayoutPanel tableLayoutPanel1;
+        private Button addToListBtn;
+        private Button clearListBtn;
+        private ListBox prizingLbx;
     }
 }

@@ -50,6 +50,18 @@ namespace SimpleSCCalculator
             updateStoreCreditRecieved();
         }
 
+        // when add to list button is clicked
+        private void addToListBtn_Click(object sender, EventArgs e)
+        {
+            updatePrizingListbox();
+        }
+
+        // when clear list button is clicked
+        private void clearListBtn_Click(object sender, EventArgs e)
+        {
+            emptyPrizingListbox();
+        }
+
         // update total store credit
         private void updateTotalStoreCredit()
         {
@@ -88,6 +100,19 @@ namespace SimpleSCCalculator
             decimal StoreCreditRecieved = everbodyGets + (storeCreditPerPoint * playerPointsNum.Value);
             decimal roundedValue = Math.Round(StoreCreditRecieved, 2);
             storeCreditReceivedTbx.Text = "$" + roundedValue.ToString();
+        }
+
+        // updates prizing list box
+        private void updatePrizingListbox()
+        {
+            string prizing = playerPointsNum.Value.ToString() + " points = " + storeCreditReceivedTbx.Text;
+            prizingLbx.Items.Add(prizing);
+        }
+
+        // clears prizing list box
+        private void emptyPrizingListbox()
+        {
+            prizingLbx.Items.Clear();
         }
     }
 }
