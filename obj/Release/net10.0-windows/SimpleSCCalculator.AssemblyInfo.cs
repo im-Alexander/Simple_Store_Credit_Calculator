@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleSCCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d110559648171804486504456131076e65d98a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5859cbb2bd2565ba8d804bd30834369f5c9c8b9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleSCCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleSCCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
