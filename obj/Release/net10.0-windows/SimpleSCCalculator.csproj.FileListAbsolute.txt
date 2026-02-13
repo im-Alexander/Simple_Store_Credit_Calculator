@@ -1,0 +1,17 @@
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\bin\Release\net10.0-windows\SimpleSCCalculator.exe
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\bin\Release\net10.0-windows\SimpleSCCalculator.deps.json
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\bin\Release\net10.0-windows\SimpleSCCalculator.runtimeconfig.json
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\bin\Release\net10.0-windows\SimpleSCCalculator.dll
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\bin\Release\net10.0-windows\SimpleSCCalculator.pdb
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.Form1.resources
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.csproj.GenerateResource.cache
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.AssemblyInfoInputs.cache
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.AssemblyInfo.cs
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.csproj.CoreCompileInputs.cache
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.sourcelink.json
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.dll
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\refint\SimpleSCCalculator.dll
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.pdb
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\SimpleSCCalculator.genruntimeconfig.cache
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\obj\Release\net10.0-windows\ref\SimpleSCCalculator.dll

@@ -31,6 +31,7 @@
             numberOfPlayersLbl = new Label();
             entryCostLbl = new Label();
             MainTlp = new TableLayoutPanel();
+            percentageNum = new NumericUpDown();
             storeCreditReservedTbx = new RichTextBox();
             totalPointsNum = new NumericUpDown();
             everybodyGetsNum = new NumericUpDown();
@@ -44,6 +45,7 @@
             tournamentSettingsLbl = new Label();
             storeCreditPerPointLbl = new Label();
             storeCreditPerPointTbx = new RichTextBox();
+            percentageLbl = new Label();
             playerPointsLbl = new Label();
             playerPointsNum = new NumericUpDown();
             playerSettingsLbl = new Label();
@@ -54,6 +56,7 @@
             clearListBtn = new Button();
             prizingLbx = new ListBox();
             MainTlp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)percentageNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)totalPointsNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)everybodyGetsNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numberOfPlayersNum).BeginInit();
@@ -88,6 +91,7 @@
             MainTlp.ColumnCount = 2;
             MainTlp.ColumnStyles.Add(new ColumnStyle());
             MainTlp.ColumnStyles.Add(new ColumnStyle());
+            MainTlp.Controls.Add(percentageNum, 1, 8);
             MainTlp.Controls.Add(storeCreditReservedTbx, 1, 6);
             MainTlp.Controls.Add(totalPointsNum, 1, 4);
             MainTlp.Controls.Add(everybodyGetsNum, 1, 3);
@@ -103,9 +107,10 @@
             MainTlp.Controls.Add(tournamentSettingsLbl, 0, 0);
             MainTlp.Controls.Add(storeCreditPerPointLbl, 0, 7);
             MainTlp.Controls.Add(storeCreditPerPointTbx, 1, 7);
+            MainTlp.Controls.Add(percentageLbl, 0, 8);
             MainTlp.Location = new Point(12, 12);
             MainTlp.Name = "MainTlp";
-            MainTlp.RowCount = 8;
+            MainTlp.RowCount = 9;
             MainTlp.RowStyles.Add(new RowStyle());
             MainTlp.RowStyles.Add(new RowStyle());
             MainTlp.RowStyles.Add(new RowStyle());
@@ -114,8 +119,19 @@
             MainTlp.RowStyles.Add(new RowStyle());
             MainTlp.RowStyles.Add(new RowStyle());
             MainTlp.RowStyles.Add(new RowStyle());
-            MainTlp.Size = new Size(338, 338);
+            MainTlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            MainTlp.Size = new Size(338, 381);
             MainTlp.TabIndex = 2;
+            // 
+            // percentageNum
+            // 
+            percentageNum.Location = new Point(218, 342);
+            percentageNum.Maximum = new decimal(new int[] { 200, 0, 0, 0 });
+            percentageNum.Name = "percentageNum";
+            percentageNum.Size = new Size(68, 34);
+            percentageNum.TabIndex = 19;
+            percentageNum.Value = new decimal(new int[] { 100, 0, 0, 0 });
+            percentageNum.ValueChanged += percentageNum_ValueChanged;
             // 
             // storeCreditReservedTbx
             // 
@@ -252,6 +268,16 @@
             storeCreditPerPointTbx.TabIndex = 17;
             storeCreditPerPointTbx.Text = "";
             // 
+            // percentageLbl
+            // 
+            percentageLbl.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            percentageLbl.AutoSize = true;
+            percentageLbl.Location = new Point(97, 339);
+            percentageLbl.Name = "percentageLbl";
+            percentageLbl.Size = new Size(112, 28);
+            percentageLbl.TabIndex = 18;
+            percentageLbl.Text = "Percentage:";
+            // 
             // playerPointsLbl
             // 
             playerPointsLbl.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -352,15 +378,17 @@
             prizingLbx.FormattingEnabled = true;
             prizingLbx.Location = new Point(356, 186);
             prizingLbx.Name = "prizingLbx";
-            prizingLbx.Size = new Size(290, 172);
+            prizingLbx.Size = new Size(290, 200);
             prizingLbx.TabIndex = 6;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = SystemColors.Menu;
-            ClientSize = new Size(658, 362);
+            ClientSize = new Size(882, 594);
             Controls.Add(prizingLbx);
             Controls.Add(clearListBtn);
             Controls.Add(addToListBtn);
@@ -369,12 +397,13 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             MaximizeBox = false;
-            MaximumSize = new Size(676, 409);
-            MinimumSize = new Size(676, 409);
+            MaximumSize = new Size(900, 700);
+            MinimumSize = new Size(300, 300);
             Name = "Form1";
             Text = "Simplified Store Credit Calculator";
             MainTlp.ResumeLayout(false);
             MainTlp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)percentageNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)totalPointsNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)everybodyGetsNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)numberOfPlayersNum).EndInit();
@@ -412,5 +441,7 @@
         private Button addToListBtn;
         private Button clearListBtn;
         private ListBox prizingLbx;
+        private Label percentageLbl;
+        private NumericUpDown percentageNum;
     }
 }

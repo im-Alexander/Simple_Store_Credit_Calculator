@@ -1,0 +1,5 @@
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\SimpleSCCalculator.exe
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\SimpleSCCalculator.dll
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\SimpleSCCalculator.deps.json
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\SimpleSCCalculator.runtimeconfig.json
+C:\Users\asika\OneDrive\Desktop\SimpleSCCalculator\SimpleSCCalculator\SimpleSCCalculator.pdb

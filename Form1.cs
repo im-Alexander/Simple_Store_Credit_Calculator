@@ -9,7 +9,7 @@ namespace SimpleSCCalculator
             updateTotalStoreCredit();
             updateStoreCreditReserved();
             updateStoreCreditPerPoint();
-            updateStoreCreditRecieved();
+            updateStoreCreditReceived();
         }
 
         // when number of players is updated
@@ -18,7 +18,7 @@ namespace SimpleSCCalculator
             updateTotalStoreCredit();
             updateStoreCreditReserved();
             updateStoreCreditPerPoint();
-            updateStoreCreditRecieved();
+            updateStoreCreditReceived();
         }
 
         // when entry cost is updated
@@ -26,7 +26,7 @@ namespace SimpleSCCalculator
         {
             updateTotalStoreCredit();
             updateStoreCreditPerPoint();
-            updateStoreCreditRecieved();
+            updateStoreCreditReceived();
         }
 
         // when everybody gets is updated
@@ -34,20 +34,26 @@ namespace SimpleSCCalculator
         {
             updateStoreCreditReserved();
             updateStoreCreditPerPoint();
-            updateStoreCreditRecieved();
+            updateStoreCreditReceived();
         }
 
         // when total points is updated
         private void totalPointsNum_ValueChanged(object sender, EventArgs e)
         {
             updateStoreCreditPerPoint();
-            updateStoreCreditRecieved();
+            updateStoreCreditReceived();
         }
 
         // when player points is updated
         private void playerPointsNum_ValueChanged(object sender, EventArgs e)
         {
-            updateStoreCreditRecieved();
+            updateStoreCreditReceived();
+        }
+
+        // when percentage is changed
+        private void percentageNum_ValueChanged(object sender, EventArgs e)
+        {
+            updateStoreCreditReceived();
         }
 
         // when add to list button is clicked
@@ -61,6 +67,8 @@ namespace SimpleSCCalculator
         {
             emptyPrizingListbox();
         }
+
+        
 
         // update total store credit
         private void updateTotalStoreCredit()
@@ -88,24 +96,27 @@ namespace SimpleSCCalculator
             storeCreditPerPointTbx.Text = "$" + roundedValue.ToString();
         }
 
-        // updates store credit recieved
-        private void updateStoreCreditRecieved()
+        // updates store credit received
+        private void updateStoreCreditReceived()
         {
             decimal everbodyGets = everybodyGetsNum.Value;
             decimal storeCreditReserved = numberOfPlayersNum.Value * everybodyGetsNum.Value;
             decimal totalStoreCredit = numberOfPlayersNum.Value * entryCostNum.Value;
             decimal totalPoints = totalPointsNum.Value;
+            decimal percentage = percentageNum.Value;
 
             decimal storeCreditPerPoint = (totalStoreCredit - storeCreditReserved) / totalPoints;
-            decimal StoreCreditRecieved = everbodyGets + (storeCreditPerPoint * playerPointsNum.Value);
-            decimal roundedValue = Math.Round(StoreCreditRecieved, 2);
+            decimal storeCreditRecieved = everbodyGets + (storeCreditPerPoint * playerPointsNum.Value);
+            storeCreditRecieved = storeCreditRecieved * (percentage / 100);
+
+            decimal roundedValue = Math.Round(storeCreditRecieved, 2);
             storeCreditReceivedTbx.Text = "$" + roundedValue.ToString();
         }
 
         // updates prizing list box
         private void updatePrizingListbox()
         {
-            string prizing = playerPointsNum.Value.ToString() + " points = " + storeCreditReceivedTbx.Text;
+            string prizing = playerPointsNum.Value.ToString() + " points @ " + percentageNum.Value.ToString() + "% = " + storeCreditReceivedTbx.Text;
             prizingLbx.Items.Add(prizing);
         }
 
@@ -114,5 +125,7 @@ namespace SimpleSCCalculator
         {
             prizingLbx.Items.Clear();
         }
+
+        
     }
 }
