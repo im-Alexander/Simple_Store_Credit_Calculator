@@ -383,12 +383,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.Menu;
-            ClientSize = new Size(882, 594);
+            ClientSize = new Size(726, 465);
             Controls.Add(prizingLbx);
             Controls.Add(clearListBtn);
             Controls.Add(addToListBtn);
@@ -396,9 +393,6 @@
             Controls.Add(MainTlp);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
-            MaximizeBox = false;
-            MaximumSize = new Size(900, 700);
-            MinimumSize = new Size(300, 300);
             Name = "Form1";
             Text = "Simplified Store Credit Calculator";
             MainTlp.ResumeLayout(false);
